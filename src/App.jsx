@@ -5,6 +5,8 @@ import PlayingVideo from "./components/PlayingVideo";
 import Search from "./components/Search";
 import { Route, Routes } from "react-router-dom";
 import { useAuth } from "./context/AuthProvider";
+import Creators from "./components/Creators";
+
 // import Loading from "./loader/Loading";
 
 const App = () => {
@@ -18,6 +20,7 @@ const App = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/search/:searchQuery" element={<Search />} />
         <Route path="/video/:id" element={<PlayingVideo />} />
+        <Route path="/creators" element={<Creators />} />
       </Routes>
     </div>
   );

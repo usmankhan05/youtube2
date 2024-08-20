@@ -25,6 +25,7 @@ import { TbReport } from "react-icons/tb";
 import { IoMdHelpCircleOutline } from "react-icons/io";
 import { MdOutlineFeedback } from "react-icons/md";
 import { useUtils } from "../context/UtilsContext";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   const { isSidebar, mobileShow, setMobileShow } = useUtils();
@@ -241,7 +242,7 @@ function Sidebar() {
         <br />
 
         <span className="text-xs text-gray-600 font-semibold cursor-pointer">
-          About Press Copyright <br /> Contact us Creators <br /> Advertise
+          About Press Copyright <br /> Contact us <Link to= "/creators">Creators</Link>  <br /> Advertise
           Developers <br />
           <p className="mt-3">Terms Privacy Policy & Safety</p> How YouTube
           works <br /> Test new features
