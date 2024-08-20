@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-hidden {
+  scrollbar-width: thin; /* Reserve space for scrollbar in Firefox */
+  scrollbar-color: transparent transparent; /* Transparent track and thumb */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 8px; /* Reserve space for scrollbar in Chrome/Safari */
+  background-color: transparent; /* Transparent scrollbar track */
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Transparent scrollbar thumb */
+}
+
+.hover-scrollbar-visible:hover {
+  scrollbar-color: darkgray lightgray; /* Set visible colors on hover */
+}
+
+.hover-scrollbar-visible:hover::-webkit-scrollbar-thumb {
+  background-color: darkgray; /* Visible scrollbar thumb on hover */
+}
